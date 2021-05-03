@@ -73,12 +73,15 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         android:hint="Coupon Code"
         app:boxBackgroundColor="@color/opaque_grey"
-
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_baseline_add_24"
+        app:endIconContentDescription="enter coupon"
         >
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/coupon_edit"
             />
 
     </com.google.android.material.textfield.TextInputLayout>

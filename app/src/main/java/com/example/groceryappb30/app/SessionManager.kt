@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.util.Log
 import android.util.Log.ASSERT
+import android.view.View
 import android.widget.Toast
 import androidx.core.content.ContextCompat.startActivity
 import com.android.volley.Request
@@ -16,6 +17,7 @@ import com.example.groceryappb30.activities.CategoryActivity
 import com.example.groceryappb30.adapters.AddressAdapter
 import com.example.groceryappb30.adapters.OLAdapter
 import com.example.groceryappb30.models.*
+import com.google.android.material.snackbar.Snackbar
 import com.google.gson.Gson
 import org.json.JSONObject
 
@@ -216,8 +218,8 @@ class SessionManager(val mContext: Context) {
             Endpoints.postOrder(),
             jsonObject,
             {
-                Toast.makeText(mContext, it.toString(), Toast.LENGTH_SHORT).show()
                 Log.d("abc", it.toString())
+
             },
             {
                 Toast.makeText(mContext, it.message, Toast.LENGTH_SHORT).show()

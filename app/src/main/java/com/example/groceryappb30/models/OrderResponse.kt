@@ -12,10 +12,10 @@ data class OrderResponse(
 
 data class OrderSummary(
     val deliveryCharges: Int,
-    val discount: Int,
+    var discount: Int,
     val orderAmount: Int,
     val ourPrice: Int,
-    val totalAmount: Int
+    var totalAmount: Int
 )
 
 data class Payment(

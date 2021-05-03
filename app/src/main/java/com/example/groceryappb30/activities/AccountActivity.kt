@@ -39,7 +39,7 @@ class AccountActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun init() {
 
-        var sharedPreferences = getSharedPreferences(Config.FIlE_NAME, Context.MODE_PRIVATE)
+        sharedPreferences = getSharedPreferences(Config.FIlE_NAME, Context.MODE_PRIVATE)
 
         setupToolbar()
 
