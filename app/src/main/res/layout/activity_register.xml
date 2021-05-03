@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="64dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed-medium"/>
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_register"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="#aaa"
+        android:hint="Enter Email"
+        android:textColorHint="@color/opaque_white"
+        android:textScaleX="1.2"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200"/>
+
+    <EditText
+        android:id="@+id/enter_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_email"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#aaa"
+        android:hint="Enter Username"
+        android:textColorHint="@color/opaque_white"
+        android:textScaleX="1.2"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200"/>
+    <EditText
+        android:id="@+id/enter_passwordprimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_username"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#aaa"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/opaque_white"
+        android:textScaleX="1.2"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200"
+        />
+
+    <EditText
+        android:id="@+id/enter_passwordsecondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_passwordprimary"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#aaa"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/opaque_white"
+        android:textScaleX="1.2"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200"
+        />
+
+    <EditText
+        android:id="@+id/enter_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#aaa"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textColorHint="@color/opaque_white"
+        android:textScaleX="1.2"
+        android:textStyle="bold|italic"
+        android:textColor="@color/teal_200"
+        android:layout_below="@+id/enter_passwordsecondary"/>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/enter_mobile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+
+        android:backgroundTint="@color/olive"
+        android:text="REGISTER"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_register"
+        android:layout_marginTop="16dp"
+        android:text="already have an account? login here:"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_register"
+        android:layout_toRightOf="@+id/text_login"
+        android:background="@color/clear"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:id="@+id/button_login"/>
+
+
+</RelativeLayout>

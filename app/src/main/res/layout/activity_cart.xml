@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_green">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/app_bar"
+        android:backgroundTint="@color/olive"
+        android:text="Return to Shopping" />
+
+    <TextView
+        android:id="@+id/text_view_no_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="sans-serif-condensed"
+        android:text="No Items In Cart"
+        android:textAlignment="center"
+        android:textColor="@color/opaque_grey"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/text_view_price_description"
+        android:layout_below="@+id/button_return" />
+
+
+    <TextView
+        android:id="@+id/text_view_price_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_check_out"
+        android:padding="4dp"
+        android:text=" Retail price: \n Our discount: \n Delivery fee: \n Total:"
+        android:textSize="24sp" />
+
+
+    <TextView
+        android:id="@+id/text_view_price_values"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_check_out"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:text=" 0 \n 0 \n 0 \n 0 "
+        android:textAlignment="viewEnd"
+        android:textSize="24sp" />
+
+
+    <Button
+        android:id="@+id/button_check_out"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/olive"
+        android:text="Check Out" />
+
+
+</RelativeLayout>
