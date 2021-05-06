@@ -40,7 +40,7 @@ class AddressActivity : AppCompatActivity() {
         var view = binding.root
         setContentView(view)
 
-        appBarBinding = AppBarBinding.bind(view.findViewById(R.id.app_bar))
+        appBarBinding = AppBarBinding.bind(binding.appBar.root)
 
 
 
